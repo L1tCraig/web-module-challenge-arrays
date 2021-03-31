@@ -45,14 +45,11 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(flavorList){
-    let newList = flavorList.slice();
+function copy(list){
+    let newList = list.slice();
     return newList;
 }    
 copy(originalFlavors)
-
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
@@ -84,8 +81,9 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(list, newFlavor){
+list.unshift(newFlavor);
+return list;
 }
 
 
@@ -100,8 +98,9 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(list){
+   list.pop();
+   return list;
 }
 
 
@@ -117,8 +116,9 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(list, index){
+    let flavor = list[index];
+    return flavor;
 }
 
 
