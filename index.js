@@ -164,10 +164,14 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
-}
-
+function filterByWord(list, word) {
+    let newList = []
+    for (var i = 0; i < list.length; i++)
+      if (list[i].includes(word)) {
+        newList.push(list[i]);
+      }
+    return newList;
+  }
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
