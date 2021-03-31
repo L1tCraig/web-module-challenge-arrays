@@ -63,7 +63,7 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(list){
-   if (list.length == 31) {
+   if (list.length === 31) {
        return true;
    } else return false;
 }
@@ -166,10 +166,11 @@ Use the filterByWord function below to do the following:
 
 function filterByWord(list, word) {
     let newList = []
-    for (var i = 0; i < list.length; i++)
+    for (let i = 0; i < list.length; i++) {
       if (list[i].includes(word)) {
         newList.push(list[i]);
       }
+    }
     return newList;
   }
 
